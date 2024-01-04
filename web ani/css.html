@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS</title>
+  <style>
+       body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+    }
+    header {
+      background-color: maroon;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+    .container {
+      width: 80%;
+      margin: 20px auto;
+      text-align: center;
+      background-color: #fff;
+      padding: 20px;
+    }
+    nav {
+      margin-top: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      padding: 8px 15px;
+      border: 2px solid white;
+      border-radius: 5px;
+    }
+    .css-sample {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 40px;
+    }
+    .css-sample div {
+      width: 100px;
+      height: 100px;
+      margin: 20px;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+    @keyframes scale {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.5); }
+      100% { transform: scale(1); }
+    }
+    @keyframes skew {
+      0% { transform: skew(0deg); }
+      50% { transform: skew(20deg); }
+      100% { transform: skew(0deg); }
+    }
+    @keyframes translate {
+      0% { transform: translate(0px, 0px); }
+      50% { transform: translate(50px, 50px); }
+      100% { transform: translate(0px, 0px); }
+    }
+    @keyframes rotate {
+      0% { transform: rotate(0deg); }
+      50% { transform: rotate(45deg); }
+      100% { transform: rotate(0deg); }
+    }
+    .scale { animation-name: scale; }
+    .skew { animation-name: skew; }
+    .translate { animation-name: translate; }
+    .rotate { animation-name: rotate; }
+    footer {
+      background-color: maroon;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cascading Style Sheets</h1>
+    <p>"Crafting captivating designs through intricate CSS styles."</p>
+    <br>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="css.html">CSS</a>
+      <a href="svg.html">SVG</a>
+      <a href="canvas.html">Canvas</a>
+      <a href="author.html">Author</a>
+    </nav>
+  </header>
+  <div class="container">
+    <h2>CSS Scale</h2>
+    <p>CSS Scale modifies the size of an element, enlarging or reducing it proportionally.</p>
+    <div class="css-sample">
+      <div class="scale" style="background-color: green;"></div>
+    </div>
+
+    <br><br>
+
+    <h2>CSS Skew</h2>
+    <p>CSS Skew tilts or slants an element along the horizontal or vertical axis, creating a diagonal transformation.</p>
+    <div class="css-sample">
+      <div class="skew" style="background-color: blue;"></div>
+    </div>
+
+    <br><br>
+
+    <h2>CSS Translate</h2>
+    <p>CSS Translate shifts an element from its original position on the horizontal and/or vertical axis, enabling movement.</p>
+    <div class="css-sample">
+      <div class="translate" style="background-color: red;"></div>
+    </div>
+
+    <br><br>
+
+    <h2>CSS Rotate</h2>
+    <p>CSS Rotate rotates an element clockwise or counterclockwise by a specified degree, altering its orientation.</p>
+    <div class="css-sample">
+      <div class="rotate" style="background-color: purple;"></div>
+    </div>
+  </div>
+  <footer>
+    <p>Portfolio. All Rights Reserved. 2024</p>
+  </footer>
+</body>
+</html>

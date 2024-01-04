@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SVG</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+    }
+    header {
+      background-color: maroon;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+    .description {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .container {
+      width: 80%;
+      margin: 20px auto;
+      text-align: center;
+      background-color: #fff;
+      padding: 20px;
+    }
+    nav {
+      margin-top: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      padding: 8px 15px;
+      border: 2px solid white;
+      border-radius: 5px;
+    }
+    @keyframes float {
+      from { transform: translateY(0); }
+      to { transform: translateY(-10px); }
+    }
+    footer {
+      background-color: maroon;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Scalable Vector Graphics</h1>
+    <p>"Exploring dynamic visuals with scalable vector graphics."</p>
+    <br>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="css.html">CSS</a>
+      <a href="svg.html">SVG</a>
+      <a href="canvas.html">Canvas</a>
+      <a href="author.html">Author</a>
+    </nav>
+  </header>
+  <br>
+  <div class="description">
+    <p>SVG, or Scalable Vector Graphics, is a web format that ensures images remain sharp and clear no matter how they're resized or adjusted.
+        <br>It's perfect for responsive design, maintaining quality across different screens and sizes.</p>
+  </div>
+  <div class="container">
+    <div class="svg-item">
+      <h3>Rose</h3>
+      <svg class="svg-image" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <image href="rose.svg" width="100%" height="100%"/>
+      </svg>
+    </div>
+    <div class="svg-item">
+      <h3>Tulip</h3>
+      <svg class="svg-image" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <image href="tulip.svg" width="100%" height="100%"/>
+      </svg>
+    </div>
+    <div class="svg-item">
+      <h3>Sunflower</h3>
+      <svg class="svg-image" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <image href="sunflower.svg" width="100%" height="100%"/>
+      </svg>
+    </div>
+    <div class="svg-item">
+      <h3>Daisy</h3>
+      <svg class="svg-image" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <image href="daisy.svg" width="100%" height="100%"/>
+      </svg>
+    </div>
+    <div class="svg-item">
+      <h3>Marigold</h3>
+      <svg class="svg-image" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <image href="marigold.svg" width="100%" height="100%"/>
+      </svg>
+    </div>
+    <div class="svg-item">
+      <h3>Dahlia</h3>
+      <svg class="svg-image" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <image href="dahlia.svg" width="100%" height="100%"/>
+      </svg>
+    </div>
+  </div>
+  <footer>
+    <p>Portfolio. All Rights Reserved. 2024</p>
+  </footer>
+</body>
+</html>
